@@ -7,7 +7,7 @@ import Comment from "../components/Comment";
 const Home = () => {
     const [data, setData] = useState([]);
 
-    const apikey = "AIzaSyCLWaM3rp4DqJPyBaCCMbbuFHdyOSlQlJI";
+    const apikey = "AIzaSyC7dYbfb4eRHmlYzBtuwRLvMVj-BIHkO44";
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&chart=mostPopular&key=${apikey}`;
 
     useEffect(() => {

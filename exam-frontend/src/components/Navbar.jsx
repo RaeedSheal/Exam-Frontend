@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
     const [search, setSearch] = useState("");
-    const apikey = "AIzaSyCLWaM3rp4DqJPyBaCCMbbuFHdyOSlQlJI";
+    const apikey = "AIzaSyC7dYbfb4eRHmlYzBtuwRLvMVj-BIHkO44";
     const [searchUrl, setSearchUrl] = useState("");
     const navigate = useNavigate();
     return (
@@ -51,8 +51,6 @@ export default function Navbar() {
                                 `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${search}&key=${apikey}`
                             );
                             localStorage.setItem("searchUrl", searchUrl);
-
-                            navigate("/home");
                         }}
                         colorScheme="red"
                     >
